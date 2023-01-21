@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <span class="navbar bg-dark justify-content-center border border-2 border-white text-white">
+    <h1 class="display-3">Weather Dashboard<img src="./assets/images/weather-icon.png"></h1>
+  </span>
+ 
+  <!--Search Column-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 bg-secondary border border-2 border-light text-white text-center">
+        <h3 class="citySearchBar">Search for a City:</h3>
+        <div class="form">
+          <input class="form-control" placeholder="Search for a City!" type="text" id="searchedCity"/>
+          <button class="btn btn-dark w-100" id="citySearchBtn">Search</button>
+        </div>
+
+          <!-- Recently Searched Cities -->
+          <div class="container-fluid text-white" id="recentlySearched">
+            <br>
+            <h3 class="text-center">Recently Searched Cities:</h3>
+            <div class="card" id="citySearchCard">
+              <ul class="recent-city"></ul>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Today's Weather -->
+        <div class="col-lg-8 bg-secondary border border-2 border-light text-white">
+         <h3 id="todayWeather" class="text-center">Today's Current Weather:</h3>
+          <div class="container" id="weatherResult"></div>
+        </div>
+        
+        <!-- Future Forecast -->
+        <div class="container-fluid bg-dark border border-2 border-light text-white" id="future-forecast">
+          <h3 id="five-day">5-Day Forecast:</h3>
+          <div class="future-card" id="futureForecast"></div>
+        </div>
+
+          <!-- Footer -->
+        <div class="text-center p-3 text-white border border-2 fixed-bottom bg-dark">
+          Made With 💚 By Masyn N.
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+</body>
+</html>
