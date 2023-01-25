@@ -22,11 +22,11 @@ function getCity(cityName){
     // Fetches the api
     fetch(url)
     .then(function (response) {
-      return response.json();
+      return response.json()
     })
     .then(function (data) {
       console.log(data)
-      // update the weather on hte page
+      // update the weather on the page
 
       //
     })
@@ -36,6 +36,7 @@ function getCity(cityName){
     recentCityElement.empty()
     for(let i = 0;i <= recentCities.length-1;i++){
       let button=$('<button></button>')
+      button.addClass("recentCityBtn")
       button.text(recentCities[i])
       button.on("click" ,function(event) {
         getCity(recentCities[i])

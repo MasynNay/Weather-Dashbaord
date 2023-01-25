@@ -39,15 +39,74 @@
       
         <!-- Today's Weather -->
         <div class="col-lg-8 bg-secondary border border-2 border-light text-white">
-         <h3 id="todayWeather" class="text-center">Today's Current Weather:</h3>
           <div class="container" id="weatherResult"></div>
+          <h3 id="todayWeather" class="text-center">Today's Current Weather:</h3>
+          <h5 class="current-date"></h5>
+         <p class="current-temp"></p>
+         <p class="current-wind"></p>
+         <p class="current-humidity"></p>
+         <img id="current-logo" src="">
         </div>
         
         <!-- Future Forecast -->
         <div class="container-fluid bg-dark border border-2 border-light text-white" id="future-forecast">
           <h3 id="five-day">5-Day Forecast:</h3>
-          <div class="future-card" id="futureForecast"></div>
-        </div>
+          <div class="row" id="card-container">
+            <div class="col-lg-2">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title" id="day1"></h5>
+                  <p class="card-subtitle mb-2" id="day1-humidity"></p>
+                  <p class="card-subtitle mb-2" id="day1-humidity"></p>
+                  <p class="card-subtitle mb-2" id="day1-humidity"></p>
+                  <img id="five-day-logo" src="">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title" id="day2"></h5>
+                  <p class="card-subtitle mb-2" id="day2-humidity"></p>
+                  <p class="card-subtitle mb-2" id="day2-humidity"></p>
+                  <p class="card-subtitle mb-2" id="day2-humidity"></p>
+                  <img id="five-day-logo" src="">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title" id="day3"></h5>
+                  <p class="card-subtitle mb-2" id="day3-humidity"></p>
+                  <p class="card-subtitle mb-2" id="day3-humidity"></p>
+                  <p class="card-subtitle mb-2" id="day3-humidity"></p>
+                  <img id="five-day-logo" src="">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title" id="day4"></h5>
+                  <p class="card-subtitle mb-2" id="day4-humidity"></p>
+                  <p class="card-subtitle mb-2" id="day4-humidity"></p>
+                  <p class="card-subtitle mb-2" id="day4-humidity"></p>
+                  <img id="five-day-logo" src="">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title" id="day5"></h5>
+                  <p class="card-subtitle mb-2" id="day5-temp"></p>
+                  <p class="card-subtitle mb-2" id="day5-wind"></p>
+                  <p class="card-subtitle mb-2" id="day5-humidity"></p>
+                  <img id="five-day-logo" src="">
+                </div>
+              </div>
+            </div>
 
           <!-- Footer -->
         <div class="text-center p-3 text-white border border-2 fixed-bottom bg-dark">
