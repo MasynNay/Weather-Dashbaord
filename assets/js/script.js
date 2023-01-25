@@ -3,6 +3,7 @@ var recentCity = []
 
 $(document).ready(function() {
   recentCity = JSON.parse(localStorage.getItem("recentlySearched"))
+  // Pull local storage
   generateRecentCities(recentCity)
   // Search button listener
   $("#citySearchBtn").on("click", function (event) {
