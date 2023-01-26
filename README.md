@@ -23,6 +23,8 @@ Server-Side APIs Challenge: Weather Dashboard
 
 ## Website Demonstration
 
-![]()
+![](./assets/images/WeatherDemo.png)
 
 ## Website Link
+
+https://masynnay.github.io/Weather-Dashboard/
