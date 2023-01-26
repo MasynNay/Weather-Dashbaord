@@ -50,6 +50,7 @@ function getCity(cityName){
             <img class="justify-content-center" id="current-logo" src="http://openweathermap.org/img/wn/${icon}@2x.png">
       </div>`
     })
+    //Five day cards
     fetch(fiveDayUrl)
       .then(function(response) {
         return response.json()
@@ -58,12 +59,11 @@ function getCity(cityName){
         console.log(data)
         var fiveDayData = data.list
         for(i = 0; i < 40; i += 8)
-        var fiveDate1 = data.list[0].dt_txt
-        var fiveTemp1 = data.list[0].main.temp
-        var fiveHumidity1 = data.list[0].main.humidity
-        var fiveWind1 = data.list[0].wind.speed
-        var fiveIcon1 = data.list[0].weather[0].icon
-        //var fiveIconDate = 
+        var fiveDate1 = data.list[6].dt_txt
+        var fiveTemp1 = data.list[6].main.temp
+        var fiveHumidity1 = data.list[6].main.humidity
+        var fiveWind1 = data.list[6].wind.speed
+        var fiveIcon1 = data.list[6].weather[0].icon
 
         for(j = 0; j < 5; j++) {
           document.getElementById('card1').innerHTML =
@@ -84,12 +84,11 @@ function getCity(cityName){
         console.log(data)
         var fiveDayData = data.list
         for(i = 0; i < 40; i += 8)
-        var fiveDate2 = data.list[8].dt_txt
-        var fiveTemp2 = data.list[8].main.temp
-        var fiveHumidity2 = data.list[8].main.humidity
-        var fiveWind2 = data.list[8].wind.speed
-        var fiveIcon2 = data.list[8].weather[0].icon
-        //var fiveIconDate = 
+        var fiveDate2 = data.list[14].dt_txt
+        var fiveTemp2 = data.list[14].main.temp
+        var fiveHumidity2 = data.list[14].main.humidity
+        var fiveWind2 = data.list[14].wind.speed
+        var fiveIcon2 = data.list[14].weather[0].icon
 
         for(g = 0; g < 5; g++) {
           document.getElementById('card2').innerHTML =
@@ -110,12 +109,11 @@ function getCity(cityName){
         console.log(data)
         var fiveDayData = data.list
         for(i = 0; i < 40; i += 8)
-        var fiveDate3 = data.list[16].dt_txt
-        var fiveTemp3 = data.list[16].main.temp
-        var fiveHumidity3 = data.list[16].main.humidity
-        var fiveWind3 = data.list[16].wind.speed
-        var fiveIcon3 = data.list[16].weather[0].icon
-        //var fiveIconDate = 
+        var fiveDate3 = data.list[22].dt_txt
+        var fiveTemp3 = data.list[22].main.temp
+        var fiveHumidity3 = data.list[22].main.humidity
+        var fiveWind3 = data.list[22].wind.speed
+        var fiveIcon3 = data.list[22].weather[0].icon
 
         for(q = 0; q < 5; q++) {
           document.getElementById('card3').innerHTML =
@@ -136,12 +134,11 @@ function getCity(cityName){
         console.log(data)
         var fiveDayData = data.list
         for(i = 0; i < 40; i += 8)
-        var fiveDate4 = data.list[24].dt_txt
-        var fiveTemp4 = data.list[24].main.temp
-        var fiveHumidity4 = data.list[24].main.humidity
-        var fiveWind4 = data.list[24].wind.speed
-        var fiveIcon4 = data.list[24].weather[0].icon
-        //var fiveIconDate = 
+        var fiveDate4 = data.list[30].dt_txt
+        var fiveTemp4 = data.list[30].main.temp
+        var fiveHumidity4 = data.list[30].main.humidity
+        var fiveWind4 = data.list[30].wind.speed
+        var fiveIcon4 = data.list[30].weather[0].icon
 
         for(q = 0; q < 5; q++) {
           document.getElementById('card4').innerHTML =
@@ -162,12 +159,11 @@ function getCity(cityName){
         console.log(data)
         var fiveDayData = data.list
         for(i = 0; i < 40; i += 8)
-        var fiveDate5 = data.list[32].dt_txt
-        var fiveTemp5 = data.list[32].main.temp
-        var fiveHumidity5 = data.list[32].main.humidity
-        var fiveWind5 = data.list[32].wind.speed
-        var fiveIcon5 = data.list[32].weather[0].icon
-        //var fiveIconDate = 
+        var fiveDate5 = data.list[38].dt_txt
+        var fiveTemp5 = data.list[38].main.temp
+        var fiveHumidity5 = data.list[38].main.humidity
+        var fiveWind5 = data.list[38].wind.speed
+        var fiveIcon5 = data.list[38].weather[0].icon
 
         for(f = 0; f < 5; f++) {
           document.getElementById('card5').innerHTML =
